@@ -1,0 +1,185 @@
+.Manyofcard {
+  position: relative;
+  width: 250px;
+
+  flex-shrink: 0;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+
+  z-index: 1;
+}
+
+.Manyofcard:hover {
+  z-index: 999;
+}
+
+/* Main Poster */
+.postImg {
+  width: 100%;
+  height: 140px;
+
+  object-fit: cover;
+
+  border-radius: 6px;
+
+  transition: transform 0.3s ease;
+}
+
+/* Hover Card */
+.hovercard {
+  position: absolute;
+
+  top: -80px;
+  left: 50%;
+
+  transform: translateX(-50%) scale(0.9);
+
+  width: 320px;
+
+  min-height: 330px;
+  height: auto;
+
+  background-color: #181818;
+
+  border-radius: 8px;
+
+  overflow: visible;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+
+  z-index: 999;
+
+  padding-bottom: 18px;
+}
+
+/* Show Hover */
+.Manyofcard:hover .hovercard {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateX(-50%) scale(1);
+}
+
+/* Hover Banner Image */
+.hoverImage {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+}
+
+/* Recently Added Badge */
+.badge {
+  display: inline-block;
+
+  background-color: #e50914;
+
+  color: white;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  padding: 4px 10px;
+
+  border-radius: 4px;
+
+  margin: 14px 0 0 14px;
+}
+
+/* Button Row */
+.buttonRow {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 16px 14px 10px;
+}
+
+/* Left Buttons */
+.iconbtn {
+  color: white;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.iconbtn:hover {
+  transform: scale(1.1);
+}
+
+/* Dropdown Button Right */
+.circleBtn {
+  margin-left: auto;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.circleBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Movie Info Row */
+.spanRow {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 14px;
+  margin-top: 2px;
+
+  color: #d2d2d2;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Tags */
+.tag {
+  color: #d2d2d2;
+
+  font-size: 13px;
+
+  letter-spacing: 0.2px;
+}
+
+/* Genre List */
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  padding: 12px 14px 16px;
+
+  color: #b3b3b3;
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Dot */
+.dot {
+  color: #777;
+
+  margin: 0 2px;
+
+  font-size: 10px;
+}
+@media (max-width: 1024px) { .Manyofcard { width: 200px; } }
+@media (max-width: 768px) { .Manyofcard { width: 160px; } }
+@media (max-width: 480px) { .Manyofcard { width: 130px; } }

@@ -1,0 +1,105 @@
+/* Container holding the entire footer */
+.footerContainer {
+  background-color: #000000;
+  color: #8c8c8c;
+  font-family: Arial, sans-serif;
+  padding: 50px 5%;
+}
+
+/* Max width container to keep content centered */
+.footerContent {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Social Media Section */
+.socialIcons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.socialIcons a {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+/* Phone Contact Text */
+.contactText {
+  margin-bottom: 30px;
+}
+
+.contactText a {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+
+/* Grid Layout for the Links */
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Column structure for the Links inside the grid */
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Targeting the React Router <Link> tags */
+.linkColumn a {
+  color: #8c8c8c;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.linkColumn a:hover {
+  text-decoration: underline;
+}
+
+/* Language Selection Box Styling */
+.languageBox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.globeIcon {
+  position: absolute;
+  left: 10px;
+  color: #b3b3b3;
+}
+
+.languageBox select {
+  background-color: #000000;
+  border: 1px solid #333333;
+  color: #b3b3b3;
+  padding: 10px 15px 10px 35px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Copyright Section */
+.copyright {
+  font-size: 11px;
+}
+
+/* --- Responsive Layout Rules --- */
+
+/* For smaller screens like tablets */
+@media (max-width: 740px) {
+  .linksGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .linksGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,24 @@
+/* .displayWrapper {
+  top: 1px;
+  padding-left: 2%;
+  background-color: black;
+} */
+.displayWrapper {
+  background-color: black;
+
+  padding-bottom: 40px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .displayWrapper {
+    padding-bottom: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .displayWrapper {
+    padding-bottom: 20px;
+  }
+}
