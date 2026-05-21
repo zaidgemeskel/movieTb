@@ -6,14 +6,14 @@
 
   color: white;
 
-  background-image:
+  /* background-image:
     linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0.3) 40%,
-      rgba(0, 0, 0, 0.4) 100%
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.2)
     ),
-    url("../../assets/image/banner.jpeg");
+    url(${BANNER_BASE}${movie?.backdrop_path}); */
 
   background-size: cover;
   background-position: center center;
