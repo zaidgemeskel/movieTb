@@ -1,7 +1,7 @@
 import styles from "../Hader/Header.module.css";
 import logo from "../../assets/image/logo.png";
 import { Link } from "react-router-dom";
-import { Search, User } from "lucide-react";
+import { Search, User, Menu } from "lucide-react";
 import { Bell } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 import React, { useState, useEffect } from "react";
@@ -9,6 +9,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   const [down, setDown] = useState(false);
   const [showBackground, setShowBackground] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -37,7 +38,16 @@ function Header() {
           {/* the navigate */}
 
           <img className={styles.img} src={logo} alt="" />
-          <nav className={styles.navbar}>
+          <button
+            className={styles.menuButton}
+            onClick={() => setMobileMenu(!mobileMenu)}
+          >
+            {mobileMenu ? <X size={24} /> : <Menu size={24} />}
+          </button>
+
+          <nav
+            className={`${styles.navbar} ${mobileMenu ? styles.showMenu : ""}`}
+          >
             <Link className={styles.link} href="">
               Home
             </Link>
