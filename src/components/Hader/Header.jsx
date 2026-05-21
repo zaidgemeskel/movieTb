@@ -48,19 +48,19 @@ function Header() {
           <nav
             className={`${styles.navbar} ${mobileMenu ? styles.showMenu : ""}`}
           >
-            <Link className={styles.link} href="">
+            <Link className={styles.link} to="/">
               Home
             </Link>
-            <Link className={styles.link} href="">
+            <Link className={styles.link} to="/tvshows">
               Tv Shows
             </Link>
-            <Link className={styles.link} href="">
+            <Link className={styles.link} to="/movies">
               Movies
             </Link>
-            <Link className={styles.link} href="">
+            <Link className={styles.link} to="/new">
               New & Popular
             </Link>
-            <Link className={styles.link} href="">
+            <Link className={styles.link} to="/mylist">
               MyList
             </Link>
           </nav>
